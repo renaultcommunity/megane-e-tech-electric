@@ -1,0 +1,119 @@
+---
+name: Bug report
+description: Reporter un problème logiciel rencontré avec votre **Megane E-TECH 100% Electrique**
+
+body:
+- type: markdown
+  attributes:
+    value: >
+      **Merci du temps que vous prendrez pour reporter le bug!**
+
+      ⚠
+      Vérifiez d'abord que votre problème [n'est pas déjà signalé](https://github.com/renaultcommunity/megane-e-tech-electric/issues) et gardez à l'esprit que nous ne sommes pas affiliés à **Renault**.
+      Avant de signaler un bug, veuillez vous assurer que vous utilisez la dernière version logiciel de la **Megane E-TECH 100% Electrique** et que le bug est reproductible.
+
+      
+      **PS:** Si vous avez besoin d'un support sur une fonctionnalité particulière, merci de consulter plutot le forum approprié
+      [Automobile Propre -- Megane E-TECH 100% Electrique](https://forums.automobile-propre.com/forums/renault-m%C3%A9gane-e-tech-electric-365/).
+
+
+- type: textarea
+  attributes:
+    label: Sommaire
+    description: Expliquez brièvement le problème rencontré ci-dessous.
+    placeholder: >-
+      Dès qu'il y a quelques perturbations (électromagnétiques ?) autour, CarPlay se met à saccader, puis déconnecter.
+      La reconnexion est très longue et complexe.
+      Aux péages, la déconnexion est systématique, et la reconnexion quasi impossible.
+  validations:
+    required: true
+
+- type: input
+  attributes:
+    label: Composant concerné
+    description: >
+      Un nom court du composant concerné:
+
+      **PS:** Pensez à regarder les labels disponible dans le volet de droite au besoin.
+    placeholder: android auto, carplay, openr link, pedal frein, commodo...
+  validations:
+    required: true
+
+- type: dropdown
+  attributes:
+    label: Model de votre **Megane E-TECH 100% Electrique**
+    description: >
+      Veuillez selectionner votre modèle dans le menu déroulant.
+    options:
+    - Equilibre EV40 130ch standard charge
+    - Equilibre EV40 130ch boost charge
+    - Equilibre EV60 220ch super charge
+    - Equilibre EV60 220ch optimum charge
+    - Evolution EV40 130ch standard charge
+    - Evolution EV40 130ch boost charge
+    - Evolution EV60 220ch super charge
+    - Evolution EV60 220ch optimum charge
+    - Techno EV40 130ch standard charge
+    - Techno EV40 130ch boost charge
+    - Techno EV60 220ch optimum charge
+    - Techno EV60 220ch super charge
+    - Iconic EV40 130ch standard charge
+    - Iconic EV40 130ch boost charge
+    - Iconic EV60 220ch optimum charge
+    - Iconic EV60 220ch super charge
+  validations:
+    required: true
+
+- type: checkboxes
+  attributes:
+    label: PAC (Pompe À Chaleur)
+    description: |
+      Cochez cette case si votre véhicule est pourvu d'une [PAC]
+
+      [PAC]: https://fr.wikipedia.org/wiki/Pompe_%C3%A0_chaleur
+    options:
+    - label: Oui mon véhicule est pourvu d'une PAC
+      required: true
+
+
+- type: input
+  attributes:
+    label: Version du logiciel
+    description: >
+      Sous quelle version tournait votre véhicule au moment du bug:
+
+    placeholder: V01 -- moteur
+  validations:
+    required: false
+
+- type: textarea
+  attributes:
+    label: Environment & Logiciel
+    description: >-
+      Veuillez fournir toutes les infos nécessaires permettant d'isoler le problème, i.e:
+      Version du logiciel, services connectés fonctionnels ou non, niveau de batterie...
+    placeholder: Moteur V 01, services connectés OK, batterie 79% ~ 301 km et 96 km parcourus.
+  validations:
+    required: true
+
+
+- type: textarea
+  attributes:
+    label: Etape pour reproduire
+    description: |
+      Décrivez exactement comment reproduire le problème. Si vous avez des images pour confirmer le problème, merci de les joindre au rapport de bug.
+    placeholder: |
+      Dès qu'il y a quelques perturbations (électromagnétiques ?) autour, CarPlay se met à saccader, puis déconnecter.
+      La reconnexion est très longue et complexe. Aux péages, la déconnexion est systématique, et la reconnexion quasi impossible.
+  validations:
+    required: true
+
+- type: textarea
+  attributes:
+    label: À quoi vous attendiez-vous comme résultat
+    description: >-
+      Décrivez ce à quoi vous vous attendiez lorsque le problème ci-dessus est apparu.
+    placeholder: >-
+      Je m'attendais à ce que Carplay fonctionne en toute circonstance, comme c'est le cas dans mon vieux véhicule
+  validations:
+    required: false
