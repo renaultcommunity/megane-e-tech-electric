@@ -1,6 +1,6 @@
 ---
 name: Bug report
-description: Reporter un problème logiciel rencontré avec votre **Megane E-TECH 100% Electrique**
+description: Reportez un problème logiciel rencontré avec votre **Megane E-TECH 100% Electrique**
 
 body:
 - type: markdown
@@ -8,10 +8,13 @@ body:
     value: >
       **Merci du temps que vous prendrez pour reporter le bug!**
 
+
+      
       ⚠
       Vérifiez d'abord que votre problème [n'est pas déjà signalé](https://github.com/renaultcommunity/megane-e-tech-electric/issues) et gardez à l'esprit que nous ne sommes pas affiliés à **Renault**.
       Avant de signaler un bug, veuillez vous assurer que vous utilisez la dernière version logiciel de la **Megane E-TECH 100% Electrique** et que le bug est reproductible.
 
+      
       
       **PS:** Si vous avez besoin d'un support sur une fonctionnalité particulière, merci de consulter plutot le forum approprié
       [Automobile Propre -- Megane E-TECH 100% Electrique](https://forums.automobile-propre.com/forums/renault-m%C3%A9gane-e-tech-electric-365/).
@@ -41,7 +44,7 @@ body:
 
 - type: dropdown
   attributes:
-    label: Model de votre **Megane E-TECH 100% Electrique**
+    label: Model de votre Megane E-TECH 100% Electrique
     description: >
       Veuillez selectionner votre modèle dans le menu déroulant.
     options:
